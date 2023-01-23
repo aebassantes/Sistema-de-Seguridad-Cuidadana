@@ -43,7 +43,7 @@ if (isset($_POST['nombre']) && isset($_POST['apellido']) && isset($_POST['usuari
         header("location: registrarse.php?error=Las contraseñas no coinciden&$usuarios_Datos");
         exit();
     }else {
-        //hashing
+        //hashing ado
         $Contraseña = md5($contraseña);
 
         $sql = "SELECT * FROM usuario WHERE nombre = '$usuario'";
