@@ -27,7 +27,7 @@
         <?php
         }
         ?>
-
+        
         <hr>
         <i class="fa-solid fa-user"></i>
         <label>Usuario</label>
