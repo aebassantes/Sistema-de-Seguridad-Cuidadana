@@ -20,8 +20,6 @@ if(empty($Usuario)){
     header("Location: index.php?error= El campo Contraseña está vacío");
     exit();
 }else{
-
-    $Contraseña = md5($Contraseña);
     
     $sql = "SELECT * FROM usuario WHERE usuario = '$Usuario' AND contraseña = '$Contraseña'";
     $result = mysqli_query($conexion, $sql);
