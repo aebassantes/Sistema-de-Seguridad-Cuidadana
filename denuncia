@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UFT-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width-device-width, initial-scale">
+        <title>DENUNCIA CIUDADANA</title>
+        <p style="color: aliceblue; width:max-content;">____________________________________________________________________________</p>
+    </head>
+    <body style= "background-color:rgb(0, 0, 0) ;">
+
+    <h1 style="color:rgb(95, 152, 2); width: 100%; font-size: 200%; text-align:center;">
+    DENUNCIA CIUDADANA
+    </h1>    
+        <form action="procesar.php" method="GET">
+            <label style="color:blue; font-size:large;">Nombre y Apellido: <input type="text" name="nombre" /></label>
+            <label style="color:blue; font-size:large;">Cedula:   <input type="text" name="cedula"/></label>
+            <p style="color:blue; font-size:large;">Telefono:   <input type="text" name="telefono" /></p>
+            <label style="color:blue; font-size:large;">Correo Electronico:   <input type="text" name="correo"/></label>
+            <label style="color:blue; font-size:large;">Ubicacion:   <input type="text" name="ubicacion"/></label>
+            <br>
+            <p style="color:blue; font-size:large;">Tipo de denuncia:  </p>
+            
+            <label style="color: blue;">
+                <input type="radio" name="Tipo" value="Asalto" >
+                Asalto
+            </label>
+            <label style="color: blue;">
+                <input type="radio" name="Tipo" value="Robo">
+                Robo
+            </label>
+            <label style="color: blue;">
+                <input type="radio" name="Tipo" value="Acoso">
+                Acoso
+            
+            </label>
+            <br>
+            <textarea name= "Denuncia" type="text" cols="75" rows="20" name="denuncia">Tu denuncia...</textarea>
+            <br>
+            <button><input type="submit" value="Registrar denuncia" /></button>
+            <p style="color: aliceblue;">____________________________________________________________________________</p>
+            <p style="color: aliceblue;">Quito  Ecuador, 2023</p>
+            </form>
+    </body>
+</html>
+
+
+
