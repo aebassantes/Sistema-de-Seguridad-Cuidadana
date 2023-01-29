@@ -30,7 +30,7 @@ if(empty($Usuario)){
             $_SESSION['Usuario'] = $row['Usuario'];
             $_SESSION['Nombre'] = $row['Nombre'];
             $_SESSION['Id'] = $row['Id'];
-            header("Location: Inicio.php");
+            header("Location: vistas/escritorio.php");
             exit();
         }else{
             header("Location: index.php?error = El usuario o contraseña están incorrectos");

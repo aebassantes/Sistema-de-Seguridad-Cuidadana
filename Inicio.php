@@ -17,6 +17,7 @@
         <h2>El botón reporte lo va a llevar a un formato de reportes que tendrá que llenar,
             para luego poder imprimir</h2>    
         <input type = "submit" name="Denunciar" value = "Denuncia">
+        <a href="vistas/escritorio.php">Denuncia</a>
         <h2>El botón denuncia lo va a llevar a un formato de denucias que tendrá que llenar,
             para luego poder imprimir</h2>     
         <input type = "submit" name="Alertar" value = "Alerta">

@@ -13,7 +13,6 @@ if (isset($_POST['nombre']) && isset($_POST['apellido']) && isset($_POST['usuari
         return $data;
     }
 
-
     $nombre =  validar($_POST['nombre']);
     $apellido =  validar($_POST['apellido']);
     $usuario =  validar($_POST['usuario']);

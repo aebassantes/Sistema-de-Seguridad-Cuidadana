@@ -17,3 +17,5 @@ if($Alertar){
     echo "Usted a pulsado el botón para alertas";
 }
 ?>
+
+<input type="text">
