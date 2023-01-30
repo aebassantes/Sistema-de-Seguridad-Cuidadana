@@ -87,7 +87,7 @@ CREATE TABLE `permiso` (
 INSERT INTO `permiso` (`idpermiso`, `nombre`) VALUES
 (1, 'Escritorio'),
 (2, 'Denuncia'),
-(5, 'Acceso');
+(3, 'Acceso');
 
 -- --------------------------------------------------------
 
@@ -298,6 +298,29 @@ ALTER TABLE `usuario_permiso`
   ADD CONSTRAINT `fk_usuario_permiso_permiso` FOREIGN KEY (`idpermiso`) REFERENCES `permiso` (`idpermiso`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   ADD CONSTRAINT `fk_usuario_permiso_usuario` FOREIGN KEY (`idusuario`) REFERENCES `usuario` (`idusuario`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 COMMIT;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `reporte`
+--
+
+create table reporte
+(
+    idreporte   bigint unsigned auto_increment,
+    nombre      varchar(100)  not null,
+    apellido    varchar(100)  not null,
+    cedula      varchar(15)   not null,
+    ciudad      varchar(50)   not null,
+    direccion   varchar(200)  not null,
+    motivo      varchar(500)  not null,
+    explicacion varchar(1000) not null,
+    informacion varchar(1000) not null,
+    condicion tinyint(1) NOT NULL DEFAULT 1,
+    constraint id
+        unique (idreporte)
+);
+
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

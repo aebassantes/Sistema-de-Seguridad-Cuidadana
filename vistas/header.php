@@ -117,7 +117,20 @@ if (strlen(session_id()) < 1)
             </li>';
             }
             ?>
-           
+
+            <?php
+            if ($_SESSION['denuncia']==1)
+            {
+              echo '<li class="treeview">
+              <a href="reporte.php">
+                <i class="fa fa-laptop"></i>
+                <span>Gestión de Reportes</span>
+                <i class="fa fa-circle-o pull-right"></i>
+              </a>
+            </li>';
+            }
+            ?>
+
             <?php 
             if ($_SESSION['acceso']==1)
             {

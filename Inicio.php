@@ -20,9 +20,6 @@
         <a href="vistas/escritorio.php">Denuncia</a>
         <h2>El botón denuncia lo va a llevar a un formato de denucias que tendrá que llenar,
             para luego poder imprimir</h2>     
-        <input type = "submit" name="Alertar" value = "Alerta">
-        <h2>El botón alertar lo va a llevar a emitir un alerta a las autoridades.</h2>
-        <hr>     
     <a href="CerrarSesion.php" class= "btn btn-danger">Cerrar sesion </a>
 </body>
 </html>

@@ -153,7 +153,8 @@ switch ($_GET["op"]){
 			in_array(1,$valores)?$_SESSION['escritorio']=1:$_SESSION['escritorio']=0;
 			in_array(2,$valores)?$_SESSION['denuncia']=1:$_SESSION['denuncia']=0;
 			in_array(3,$valores)?$_SESSION['acceso']=1:$_SESSION['acceso']=0;
-		
+			in_array(5,$valores)?$_SESSION['acceso']=1:$_SESSION['acceso']=0;
+
 
 	    }
 	    echo json_encode($fetch);
